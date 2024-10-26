@@ -1,5 +1,5 @@
 
-use enum_display_derive::Display;
+use display_enum::Display;
 
 #[derive(Display)]
 //#[ignore_field]

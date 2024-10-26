@@ -1,5 +1,5 @@
 [package]
-name = "enum_display_derive"
+name = "display_enum"
 version = "0.1.0"
 edition = "2021"
 homepage = "https://github.com/ptechen"
