@@ -6,8 +6,7 @@ use syn::{ItemEnum, parse_macro_input, TypePath};
 use proc_macro::TokenStream;
 
 /// ignore_field
-/// snake
-#[proc_macro_derive(Display, attributes(ignore_field, snake))]
+#[proc_macro_derive(Display, attributes(ignore_field))]
 pub fn enum_display_derive(input: TokenStream) -> TokenStream {
     let input = parse_macro_input!(input as ItemEnum);
     impl_display(input)
