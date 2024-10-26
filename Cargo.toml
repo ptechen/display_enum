@@ -1,0 +1,19 @@
+[package]
+name = "enum_display_derive"
+version = "0.1.0"
+edition = "2021"
+homepage = "https://github.com/ptechen"
+documentation = "https://docs.rs/enum_display_derive"
+repository = "https://github.com/ptechen/enum_display_derive.git"
+license = "MIT OR Apache-2.0"
+readme = "README.md"
+description = "Implement Display For the Enumeration"
+
+
+[lib]
+proc-macro = true
+
+[dependencies]
+syn = { version = "2", features = ["full"] }
+proc-macro2 = "1"
+quote = { version = "1" }
