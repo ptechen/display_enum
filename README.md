@@ -10,6 +10,7 @@
         A(i32),
         #[ignore_field]
         B(Data, i32),
+        C(Data, i32),
         TestA
     }
     
