@@ -1,4 +1,3 @@
-
 use display_enum::Display;
 
 #[derive(Display)]
