@@ -1,7 +1,7 @@
 # enum_display_derive
 
-## example:
-    
+# example:
+```rust
     use display_enum::Display;
 
     #[derive(Display)]
@@ -20,5 +20,7 @@
 
     #[test]
     fn test() {
-        println!("{}", Test::B(Data{test: 5}, 6).to_string());
+        assert_eq!("B", Test::B(Data{test: 5}, 6).to_string());
+        assert_eq!("C:(Data { test: 5 }, 6)", Test::C(Data{test: 5}, 6).to_string());
     }
+```
