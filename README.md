@@ -3,7 +3,7 @@
 [![Version info](https://img.shields.io/crates/v/display_enum.svg)](https://crates.io/crates/display_enum)
 [![Downloads](https://img.shields.io/crates/d/display_enum.svg?style=flat-square)](https://crates.io/crates/display_enum)
 [![docs](https://img.shields.io/badge/docs-latest-blue.svg?style=flat-square)](https://docs.rs/display_enum)
-[![dependency status](https://deps.rs/crate/display_enum/0.1.4/status.svg)](https://deps.rs/crate/display_enum)
+[![dependency status](https://deps.rs/crate/display_enum/0.1.5/status.svg)](https://deps.rs/crate/display_enum)
 
 
 # example:
