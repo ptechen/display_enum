@@ -1,10 +1,9 @@
 extern crate proc_macro;
 
 use proc_macro2::{Ident, Span};
-use quote::{quote, ToTokens};
-use syn::{ItemEnum, parse_macro_input, TypePath, TypeTuple};
+use quote::quote;
+use syn::{ItemEnum, parse_macro_input, TypePath};
 use proc_macro::TokenStream;
-use syn::spanned::Spanned;
 
 /// ignore_field
 #[proc_macro_derive(Display, attributes(ignore_field, to_vec))]
