@@ -1,13 +1,17 @@
 use display_enum::Display;
 
 #[derive(Display)]
+#[to_vec]
 //#[ignore_field]
 enum Test{
     A(i32),
     #[ignore_field]
     B(Data, i32),
     C(Data, i32),
-    TestA
+    TestA,
+    #[ignore_field]
+    Data{name: Data, test: i64},
+    Data1{name: Data, test: i64},
 }
 
 #[derive(Debug)]
@@ -18,4 +22,6 @@ struct Data {
 fn test() {
     assert_eq!("B", Test::B(Data{test: 5}, 6).to_string());
     assert_eq!("C:(Data { test: 5 }, 6)", Test::C(Data{test: 5}, 6).to_string());
+    assert_eq!("Data", Test::Data {name: Data{ test: 0 }, test: 42}.to_string());
+    assert_eq!("Data1:(Data { test: 0 }, 42)", Test::Data1 {name: Data{ test: 0 }, test: 42}.to_string());
 }
